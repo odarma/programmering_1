@@ -7,15 +7,15 @@ meny={
     'reinsdyrstek':155.90
 }
 #3.1
-#def vis_meny_rett(meny,rett):
-#    for key,value in meny.items():
-#        if key == rett:
-#            print(f'{rett} - {value}kr')
-#    return
-#for key,value in meny.items():
-#    print(key)
-#valg_rett=input(f'vilke rett vil du se prisen for? kopier retten over')
-#vis_meny_rett(meny,valg_rett)
+def vis_meny_rett(meny,rett):
+    for key,value in meny.items():
+        if key == rett:
+            print(f'{rett} - {value}kr')
+    return
+for key,value in meny.items():
+    print(key)
+valg_rett=input(f'vilke rett vil du se prisen for? kopier retten over')
+vis_meny_rett(meny,valg_rett)
 
 #3.2
 def bestill(ribbe=0,pinne=0,lute=0,nut=0,rein=0):
